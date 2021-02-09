@@ -1,0 +1,17 @@
+
+<div class="d-flex flex-wrap p-2 mt-2">
+
+<div *ngFor="let x of listdata">
+
+<div class="card shadow text-center" style="width: 18rem; margin-left: 100px; padding: 10px; ">
+  <img src="assets/r.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">{{x.tname}}</h4>
+    <h4>📆 {{x.mydate}}</h4>
+    <p class="card-text">{{x.task}}</p>
+    <button class="btn btn-danger m-2 text-center" (click)="deleteToDo(x.id)">  <mat-icon>delete</mat-icon></button>
+
+  </div>
+</div>
+</div>
+
